@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  height: 100vh;
+  background-image: url(../images/bg-pattern-top-desktop.svg),
+    url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, top 128px right;
+}
+
+img {
+  display: block;
+}
+
+/* MAIN */
+.main {
+  max-width: 1140px;
+  margin: 127px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info {
+  flex: 1 1 400px;
+  background: aquamarine;
+  margin-right: 20px;
+  padding: 0 70px 0 15px;
+}
+
+.info h1 {
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: bold;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 12px;
+}
+
+.info p {
+  font-size: 0.91em;
+  line-height: 1.7em;
+  font-weight: 500;
+  color: hsl(303, 10%, 53%);
+  margin-bottom: 80px;
+}
+
+/* REVIEWS */
+.reviews {
+  display: flex;
+  flex: 1 1 400px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.card-review {
+  background: hsl(300, 24%, 96%);
+  border-radius: 8px;
+  width: 445px;
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+  font-size: 0.8em;
+  display: flex;
+  padding: 20px 31px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.review1 {
+  align-self: flex-start;
+}
+
+.review3 {
+  align-self: flex-end;
+}
+
+.stars {
+  margin-right: 33px;
+  display: flex;
+}
+
+@media (max-width: 787px) {
+  .main {
+    display: flex;
+  }
+
+  .card-review {
+    display: block;
+  }
+
+  .review1,
+  .review3 {
+    align-self: center;
+  }
+}
+
+/* DEPOIMENTOS */
+.depoimentos {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: hsl(0, 0%, 100%);
+  background: bisque;
+  height: 266px;
+}
+
+.card-depoimento {
+  background: hsl(300, 43%, 22%);
+  padding: 39px 31px 36px;
+  border-radius: 8px;
+  margin: 0 15px;
+  flex: 1 1 250px;
+}
+
+.card-depoimento p {
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+
+.info-card {
+  display: flex;
+  margin-bottom: 31px;
+}
+
+.info-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 22px;
+}
+
+.dados h2 {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.dados span {
+  font-weight: 400;
+  font-size: 0.8em;
+  color: hsl(333, 80%, 67%);
+}
+
+.depo1 {
+  align-self: flex-start;
+}
+
+.depo2 {
+  align-self: center;
+}
+
+.depo3 {
+  align-self: flex-end;
+}
+
+@media (max-width: 1112px) {
+  .depo1,
+  .depo2,
+  .depo3 {
+    align-self: stretch;
+  }
+}
