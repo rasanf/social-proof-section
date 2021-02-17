@@ -29,7 +29,6 @@ img {
 
 .info {
   flex: 1 1 400px;
-  background: aquamarine;
   margin-right: 20px;
   padding: 0 70px 0 15px;
 }
@@ -81,8 +80,18 @@ img {
 }
 
 .stars {
-  margin-right: 33px;
+  margin-right: 23px;
   display: flex;
+}
+
+.stars img {
+  margin-right: 10px;
+}
+
+@media (max-width: 1129px) {
+  .card-review:last-child {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 787px) {
@@ -90,13 +99,29 @@ img {
     display: flex;
   }
 
+  .info {
+    text-align: center;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .info p {
+    margin-bottom: 40px;
+  }
+
   .card-review {
     display: block;
+    text-align: center;
   }
 
   .review1,
   .review3 {
     align-self: center;
+  }
+
+  .stars {
+    margin: 0 auto 15px;
+    justify-content: center;
   }
 }
 
@@ -108,7 +133,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   color: hsl(0, 0%, 100%);
-  background: bisque;
+  /* background: bisque; */
   height: 266px;
 }
 
@@ -117,7 +142,7 @@ img {
   padding: 39px 31px 36px;
   border-radius: 8px;
   margin: 0 15px;
-  flex: 1 1 250px;
+  flex: 1 1 270px;
 }
 
 .card-depoimento p {
@@ -161,10 +186,26 @@ img {
   align-self: flex-end;
 }
 
-@media (max-width: 1112px) {
+@media (max-width: 1129px) {
+  .card-depoimento {
+    margin-bottom: 30px;
+  }
+
   .depo1,
   .depo2,
   .depo3 {
     align-self: stretch;
+  }
+}
+
+@media (max-width: 714px) {
+  .depoimentos {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .card-depoimento {
+    flex: 0 1 327px;
+    margin-bottom: 15px;
   }
 }
